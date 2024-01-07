@@ -1,4 +1,4 @@
-from pydantic import BaseModel, UUID4
+from pydantic import BaseModel 
 
 
 # Models for Task Submission and Retrieval
@@ -8,17 +8,17 @@ class TaskSubmission(BaseModel):
 
 
 class TaskSubmissionResponse(BaseModel):
-    id: UUID4
+    id: str
 
 
 class TaskRetrievalResponse(BaseModel):
-    id: UUID4
+    id: str
     input: dict
 
 
 # Models for Result Submission and Retrieval
 class ResultSubmission(BaseModel):
-    id: UUID4
+    id: str
     output: dict
 
 
