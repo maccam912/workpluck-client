@@ -1,0 +1,26 @@
+[project]
+name = "workpluck-client"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Matt Koski",email = "maccam912@gmail.com"},
+]
+dependencies = [
+    "httpx>=0.26.0",
+    "pydantic>=2.5.3",
+]
+requires-python = "==3.8.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.1.11",
+    "pytest>=7.4.4",
+    "responses>=0.24.1",
+    "pytest-httpserver>=1.0.8",
+]
